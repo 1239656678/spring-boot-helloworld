@@ -26,4 +26,12 @@ public class HelloController {
 	  map.put("three", "hello");
 	  return map;
   }
+  @RequestMapping("hello")
+  public Object hello() {
+	  Map<String, Object> map=new HashMap<String, Object>();
+	  map.put("one", 123);
+	  map.put("two", 8888);
+	  map.put("three", "hello");
+	  return map;
+  }
 }
