@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 /**
- * 
+ *
  * @author WIN8.1
  * 这个类的所有返回的数据直接写给浏览器，如果是对象转为json数据
  */
 @RestController//相当于ResponseBody和Controller
 public class HelloController {
   @RequestMapping("/hello")
-  public String hello() {
+  public String hello1() {
 	  return "hello";
   }
   @RequestMapping("demo")
